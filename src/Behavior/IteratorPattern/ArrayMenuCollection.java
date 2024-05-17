@@ -19,7 +19,6 @@ public class ArrayMenuCollection implements IterableCollection{
 
     @Override
     public Integer get(int index) {
-        index = index++ ;
         return menuArray[index];
     }
 }
