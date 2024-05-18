@@ -1,4 +1,4 @@
-package Behavior.CommandPattern.RemoteControl;
+package Behavior.CommandPattern;
 
 public class RemoteControlTest {
     public static void main(String[] args){

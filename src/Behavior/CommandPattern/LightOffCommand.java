@@ -1,4 +1,4 @@
-package Behavior.CommandPattern.RemoteControl;
+package Behavior.CommandPattern;
 
 public class LightOffCommand implements Command{
     Light light ;

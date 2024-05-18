@@ -1,4 +1,4 @@
-package Behavior.State.GumBallGame;
+package Behavior.State;
 
 public class HasQuarterState implements State{
     GumballMachine machine;
