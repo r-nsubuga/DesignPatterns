@@ -8,6 +8,11 @@ public class Channel {
      This is your publisher
      it notifies its listeners in case of any change to it
      */
+    private double price = 0.0;
+
+    public double getPrice(){
+        return this.price;
+    }
     List<Observer> observerList = new ArrayList<Observer>();
     void addObservers(Observer observer){
         observerList.add(observer);
@@ -18,8 +23,11 @@ public class Channel {
 
     void notifyObservers(){
         for(Observer observer:observerList){
-            observer.update("NEW_STATE");
+            observer.update(this);
 
         }
+    }
+    void changePrice(double newPrice){
+        this.price = newPrice;
     }
 }
